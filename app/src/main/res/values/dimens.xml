@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_field_padding_start">30dp</dimen>
+    <dimen name="text_field_padding_end">30dp</dimen>
+    <dimen name="text_field_padding_top">30dp</dimen>
+</resources>

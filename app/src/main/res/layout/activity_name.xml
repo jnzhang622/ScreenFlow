@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/NameRequest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="What's your name?"
+        android:textSize="30sp"
+        android:paddingStart="@dimen/text_field_padding_start"
+        android:paddingLeft="@dimen/text_field_padding_start"
+        android:paddingEnd="@dimen/text_field_padding_end"
+        android:paddingRight="@dimen/text_field_padding_end"
+        android:paddingTop="@dimen/text_field_padding_top"
+        android:inputType="textLongMessage"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintBottom_toTopOf="@+id/first_name_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/first_name_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/text_field_padding_start"
+        android:paddingLeft="@dimen/text_field_padding_start"
+        android:paddingEnd="@dimen/text_field_padding_end"
+        android:paddingRight="@dimen/text_field_padding_end"
+        android:paddingTop="@dimen/text_field_padding_top"
+        android:hint="@string/text_field_first_name_hint"
+        android:inputType="textLongMessage"
+        app:layout_constraintHeight_percent=".14"
+        app:layout_constraintBottom_toTopOf="@+id/last_name_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/first_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/last_name_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/text_field_padding_start"
+        android:paddingStart="@dimen/text_field_padding_start"
+        android:paddingRight="@dimen/text_field_padding_end"
+        android:paddingEnd="@dimen/text_field_padding_end"
+        android:paddingTop="@dimen/text_field_padding_top"
+        android:hint="@string/text_field_last_name_hint"
+        app:layout_constraintHeight_percent=".14"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/last_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/NextButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="launchEmailActivity"
+        android:paddingStart="@dimen/text_field_padding_start"
+        android:paddingLeft="@dimen/text_field_padding_start"
+        android:paddingEnd="@dimen/text_field_padding_end"
+        android:paddingRight="@dimen/text_field_padding_end"
+        android:paddingTop="@dimen/text_field_padding_top"
+        app:layout_constraintTop_toBottomOf="@+id/last_name_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

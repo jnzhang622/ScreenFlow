@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ResultTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/text_field_padding_start"
+        android:paddingStart="@dimen/text_field_padding_start"
+        android:paddingRight="@dimen/text_field_padding_end"
+        android:paddingEnd="@dimen/text_field_padding_end"
+        android:paddingTop="@dimen/text_field_padding_top"
+        android:hint="@string/text_field_email_address_hint"
+        app:layout_constraintHeight_percent=".17"
+        android:text="Well Done! Sign Up Complete"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/FirstNameResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/FirstNameResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/text_field_padding_start"
+        android:paddingStart="@dimen/text_field_padding_start"
+        android:paddingRight="@dimen/text_field_padding_end"
+        android:paddingEnd="@dimen/text_field_padding_end"
+        android:paddingTop="@dimen/text_field_padding_top"
+        android:hint="First Name"
+        app:layout_constraintHeight_percent=".10"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/LastNameResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/LastNameResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/text_field_padding_start"
+        android:paddingStart="@dimen/text_field_padding_start"
+        android:paddingRight="@dimen/text_field_padding_end"
+        android:paddingEnd="@dimen/text_field_padding_end"
+        android:paddingTop="@dimen/text_field_padding_top"
+        android:hint="Last Name"
+        app:layout_constraintHeight_percent=".10"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/EmailResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/text_field_padding_start"
+        android:paddingStart="@dimen/text_field_padding_start"
+        android:paddingRight="@dimen/text_field_padding_end"
+        android:paddingEnd="@dimen/text_field_padding_end"
+        android:paddingTop="@dimen/text_field_padding_top"
+        android:hint="@string/text_field_email_address_hint"
+        app:layout_constraintHeight_percent=".10"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/LastNameResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/PasswordResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/text_field_padding_start"
+        android:paddingStart="@dimen/text_field_padding_start"
+        android:paddingRight="@dimen/text_field_padding_end"
+        android:paddingEnd="@dimen/text_field_padding_end"
+        android:paddingTop="@dimen/text_field_padding_top"
+        android:hint="Password"
+        app:layout_constraintHeight_percent=".10"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/EmailResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
